@@ -270,3 +270,27 @@ tr:nth-child(even) {
 tr:nth-child(odd) {
     background-color: rgba(142, 158, 105, 0.5);
 }
+
+.etiquetteContent {
+    text-align: center;
+    margin: auto;
+    width: 80%;
+}
+
+.etiquetteContent h1 {
+    font-size: 3em;
+    margin-bottom: 2px;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.etiquetteContent ul {
+    text-align: left;
+    font-weight: 550;
+    width: 80%;
+    margin: 0px auto 3em auto;
+}
+
+.etiquetteContent p {
+    margin-top: 0px;
+    margin-bottom: 0.3em;
+}
