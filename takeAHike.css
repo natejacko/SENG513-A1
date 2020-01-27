@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css?family=Bebas+Neue|Open+Sans&display=swap');
+
+.home {
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    background-color: #F2E2C4;
+    height: 100%;
+    margin-top: 7em;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5.5em;
+    background: #8E9E69;
+    display: flex;
+    justify-content: space-evenly;
+    font-family: 'Bebas Neue', cursive;
+    z-index: 1;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+nav h1 {
+    font-size: 2.5em;
+    margin: 4px auto 0px;
+    text-align: center;
+}
+
+nav h3 {
+    margin: 0px auto 4px;
+    font-size: 0.9em;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.navLink {
+    margin: 3px;
+    color: inherit;
+    text-decoration: none;
+}
+
+.navLink:hover {
+    color: #906649;
+    border-bottom: 5px solid #906649;
+}
+
+.selected {
+    color: #47332A;
+    border-bottom: 5px solid #47332A;
+}
+
+main {
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+    margin: 2em;
+}
+
+.noEdge {
+    padding: 0px;
+    margin: 0px;
+}
+
+.bgImage {
+    background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url("https://www.themandagies.com/wp-content/uploads/2018/07/Horseback-riding-hiking-East-End-of-Rundle-Banff-Alberta-172.jpg");
+    filter: blur(3px);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: scale(1.1);
+}
+
+.mainText {
+    background-color: rgba(0,0,0, 0.7);
+    color: rgb(137, 184, 141);
+    font-weight: bold;
+    border: 4px solid rgb(137, 184, 141);
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    width: 65%;
+    padding: 20px;
+    text-align: center;
+}
+
+.mainText h1 {
+    font-size: 5em;
+    margin: 5px;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.mainText a {
+    color: rgb(145, 167, 148);
+}
+
+.trailContent {
+    text-align: center;
+    margin: auto;
+    width: 50%;
+}
+
+.trailContent h1 {
+    font-size: 3em;
+    margin-bottom: 2px;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.hikeStats {
+    margin-top: 1em;
+}
+
+.hikeStats h2 {
+    display: inline;
+    margin-right: 2em;
+}
+
+.difficulty {
+    border-radius: 4px;
+    padding: 5px 10px;
+}
+
+.slideContainer
+{
+    overflow: hidden;
+    height: 510px;
+    width: 728px;
+    margin: 0 auto;
+}
+
+.slideshow {
+    width: 2912px;
+    animation-name: slide;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}
+
+.slide {
+    float: left;
+    height: 510px;
+    width: 728px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.set1:nth-child(1) {
+    background-image: url("https://cdn-assets.alltrails.com/uploads/photo/image/25307305/extra_large_39403669a2cf910a11213a96d42c1be2.jpg");
+}
+
+.set1:nth-child(2) {
+    background-image: url("https://cdn-assets.alltrails.com/uploads/photo/image/24362204/extra_large_624d1a5f0676f9616553b29a4fd1e28d.jpg");
+}
+
+.set1:nth-child(3) {
+    background-image: url("http://2.bp.blogspot.com/-_5LVZonViLw/T_9Kyr11r_I/AAAAAAAAB44/lOtPdfesryQ/s1600/IMG_6058.JPG");
+}
+
+.set2:nth-child(1) {
+    background-image: url("http://www.albertawow.com/hikes/Taylor_Lake/Taylor_Lake_6676.JPG");
+}
+
+.set2:nth-child(2) {
+    background-image: url("https://hikebiketravel.com/wp-content/uploads/2012/09/Taylor-Lake-in-all-its-fall-glory-6.jpg");
+}
+
+.set2:nth-child(3) {
+    background-image: url("https://cdn-assets.alltrails.com/uploads/photo/image/21598423/extra_large_9bad2a83ff90b2f5cf24acc23cf6725a.jpg");
+}
+
+.set3:nth-child(1) {
+    background-image: url("https://hikebiketravel.com/wp-content/uploads/2016/05/IMGP4410hs720.jpg");
+}
+
+.set3:nth-child(2) {
+    background-image: url("https://gripped.com/wp-content/uploads/2018/04/Yamnuska.jpg");
+}
+
+.set3:nth-child(3) {
+    background-image: url("http://www.albertawow.com/hikes/Yamnuska_Mountain/Yamnuska%20Mountain%20Hike%205207.jpg");
+}
+
+@keyframes slide {
+    25% {margin-left: 0px;}
+    35% {margin-left: -728px;}
+    55% {margin-left: -728px;}
+    65% {margin-left: -1456px;}
+    85% {margin-left: -1456px;}
+}
+
+.easy {
+    background-color: rgb(93, 214, 93);
+}
+
+.moderate {
+    background-color: rgb(94, 158, 241);
+}
+
+.hard {
+    background-color: rgb(224, 65, 65);
+}
+
+.beforeYouGoContent {
+    text-align: center;
+    margin: auto;
+    width: 70%;
+}
+
+.beforeYouGoContent h1 {
+    font-size: 3em;
+    margin-bottom: 2px;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.beforeYouGoContent div {
+    width: 50%;
+    margin: auto;
+}
+
+.beforeYouGoContent ul {
+    text-align: left;
+    vertical-align: middle;
+    display: inline-block;
+    font-weight: 550;
+    width: 70%;
+}
+
+.beforeYouGoContent p {
+    margin-top: 0px;
+    margin-bottom: 0.3em;
+}
+
+.beforeYouGoContent img {
+    display: inline-block;
+    vertical-align: middle;
+    width: 20%;
+}
+
+table, th, td {
+    margin: auto;
+    font-size: 1.05em;
+    border-collapse: collapse;
+    border: 1px solid black;
+    padding: 2px 10px;
+}
+
+th {
+    font-weight: bold;
+    border-bottom-width: 2px;
+}
+
+td {
+    font-weight: 550;
+}
+
+tr:nth-child(even) {
+    background-color: rgba(144, 103, 73, 0.5)
+}
+
+tr:nth-child(odd) {
+    background-color: rgba(142, 158, 105, 0.5);
+}
